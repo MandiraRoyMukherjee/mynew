@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="rightnavbar.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<style>
+.mid
+{
+  margin-left:200px
+}
+
+@media screen and (max-width: 468px) {
+  .sidebar a {
+    text-align: center;
+    float: left;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+  }
+  
+.logo
+{
+  height: 60px;
+  width:50px;
+  float:left;
+ 
+ 
+  
+}
+
+
+.mid
+{
+ margin-left:5px;
+  margin-top: 10px;
+   margin-right: 10px;
+}
+ 
+}
+</style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <img src="logo-1.png" alt="logo" class="logo">
+        <a  href="index.html">Dashboard</a>
+        <a   href="#country">Country</a>
+        <a href="state.html">State</a>
+        <a href="city.html">City</a>
+        <a href="area.html">Area</a>
+        <a href="#about">Pincode</a>
+        <a class="active"  href="#catagory">Catagory</a>
+        <a   href="subcatagory.html">Subcatagory</a>
+        <a href="keyword.html">Keywords</a>
+        <a href="assignedpa.html">Assigned Package</a>
+      </div>
+
+  
+
+    
+
+   
+    
+    
+    <!--<form >
+        <label for="fname">Country name:</label>
+        <input type="text" id="fname" name="fname">
+       
+     
+          
+       
+       
+
+            <button type="button" onclick="myFunction()">Submit</button>
+           
+          
+        </form> 
+
+
+        
+</div>
+<div style="margin-left: 450px;">
+    <p id="hello"></p></div>
+   
+  
+    <script>
+        function myFunction() {
+          document.getElementById("hello").innerHTML =  "india";
+         
+        }
+        </script>-->
+
+         
+<div class="container" >
+    
+      
+    <form class="mid">
+          
+      <div class="form-group">
+        <label>Catagory Name:</label>
+        <input type="text" name="name" class="form-control" value="Paresh" required="">
+      </div>
+      
+     
+     
+      <button type="submit" class="btn btn-success save-btn">Save</button>
+      
+    </form>
+    <br/>
+    <div class="mid">
+    <table class="table table-bordered data-table" >
+      <thead>
+        <th>Catagory Name</th>
+       
+        
+        <th >Action</th>
+      </thead>
+      <tbody>
+      
+      </tbody>
+    </table>
+     
+  </div>
+</div>
+</div>
+     
+  <script type="text/javascript">
+     
+      $("form").submit(function(e){
+          e.preventDefault();
+          var name = $("input[name='name']").val();
+          var email = $("input[name='email']").val();
+       
+       
+       
+          $(".data-table tbody").append("<tr data-name='"+name+"' data-email='"+email+"'><td>"+name+"</td><td><button class='btn btn-info btn-xs btn-edit'>Edit</button><button class='btn btn-danger btn-xs btn-delete'>Delete</button></td></tr>");
+      
+          $("input[name='name']").val('');
+          
+      });
+     
+      $("body").on("click", ".btn-delete", function(){
+          $(this).parents("tr").remove();
+      });
+      
+      $("body").on("click", ".btn-edit", function(){
+          var name = $(this).parents("tr").attr('data-name');
+          var email = $(this).parents("tr").attr('data-email');
+      
+          $(this).parents("tr").find("td:eq(0)").html('<input name="edit_name" value="'+name+'">');
+         
+      
+          $(this).parents("tr").find("td:eq(1)").prepend("<button class='btn btn-info btn-xs btn-update'>Update</button><button class='btn btn-warning btn-xs btn-cancel'>Cancel</button>")
+          $(this).hide();
+      });
+     
+      $("body").on("click", ".btn-cancel", function(){
+          var name = $(this).parents("tr").attr('data-name');
+          var email = $(this).parents("tr").attr('data-email');
+      
+          $(this).parents("tr").find("td:eq(0)").text(name);
+         
+     
+          $(this).parents("tr").find(".btn-edit").show();
+          $(this).parents("tr").find(".btn-update").remove();
+          $(this).parents("tr").find(".btn-cancel").remove();
+      });
+     
+      $("body").on("click", ".btn-update", function(){
+          var name = $(this).parents("tr").find("input[name='edit_name']").val();
+          var email = $(this).parents("tr").find("input[name='edit_email']").val();
+      
+          $(this).parents("tr").find("td:eq(0)").text(name);
+        
+       
+          $(this).parents("tr").attr('data-name', name);
+         
+      
+          $(this).parents("tr").find(".btn-edit").show();
+          $(this).parents("tr").find(".btn-cancel").remove();
+          $(this).parents("tr").find(".btn-update").remove();
+      });
+      
+  </script>
+ 
+</body>
+</html>

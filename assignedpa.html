@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="rightnavbar.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<style>
+.mid
+{
+  margin-left:200px
+}
+
+@media screen and (max-width: 468px) {
+  .sidebar a {
+    text-align: center;
+    float: left;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+  }
+  
+.logo
+{
+  height: 60px;
+  width:50px;
+  float:left;
+ 
+ 
+  
+}
+
+
+.mid
+{
+ margin-left:5px;
+  margin-top: 10px;
+   margin-right: 10px;
+}
+ 
+}
+</style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <img src="logo-1.png" alt="logo" class="logo">
+        <a href="index.html">Dashboard</a>
+        <a href="country.html">Country</a>
+        <a  href="state.html">State</a>
+        <a href="city.html">City</a>
+        <a  href="area.html">Area</a>
+        
+        <a  href="#pincode">Pincode</a>
+        <a href="catagory.html">Catagory</a>
+        <a   href="#subcatagory">Subcatagory</a>
+        <a href="keyword.html">Keywords</a>
+        <a class="active" href="#assignedpa">Assigned Package</a>
+       
+      </div>
+
+  
+
+    
+
+   
+    
+    
+    <!--<form >
+        <label for="fname">Country name:</label>
+        <input type="text" id="fname" name="fname">
+       
+     
+          
+       
+       
+
+            <button type="button" onclick="myFunction()">Submit</button>
+           
+          
+        </form> 
+
+
+        
+</div>
+<div style="margin-left: 450px;">
+    <p id="hello"></p></div>
+   
+  
+    <script>
+        function myFunction() {
+          document.getElementById("hello").innerHTML =  "india";
+         
+        }
+        </script>-->
+
+         
+<div class="container" >
+    
+      
+    <form class="mid">
+          
+      <div class="form-group">
+        
+         Select Country: <select name="name" class="form-control" size="1" required="">
+        <option value="" selected="selected" name="name" class="form-control">Select Country</option>
+        <option value="volvo" name="name" class="form-control">Volvo</option>
+    <option value="saab" name="name" class="form-control">Saab</option>
+    <option value="opel" name="name" class="form-control">Opel</option>
+    <option value="audi"name="name" class="form-control">Audi</option>
+        </select>
+      </div>
+      <!--Select Country: <select name="state" id="countySel" size="1">
+        <option value="" selected="selected">Select Country</option>
+        </select>
+      <div class="form-group">
+        <label>State Name</label>
+        <input type="text" name="email" class="form-control" value="paresh" required="">
+      </div>-->
+      <div class="form-group">
+        
+        Select state: <select name="email" class="form-control" value="paresh" size="1" required="">
+       <option value="" selected="selected"name="email" class="form-control"> Select Country </option>
+       <option value="volvo" name="email" class="form-control" >Volvo</option>
+   <option value="saab" name="email" class="form-control" >Saab</option>
+   <option value="opel" name="email" class="form-control" >Opel</option>
+   <option value="audi" name="email" class="form-control" >Audi</option>
+       </select>
+     </div>
+     <div class="form-group">
+        
+        Select city: <select name="city" class="form-control"  size="1" required="">
+       <option value="" selected="selected"name="city" class="form-control"> Select Country </option>
+       <option value="volvo" name="city" class="form-control" >Volvo</option>
+   <option value="saab" name="city" class="form-control" >Saab</option>
+   <option value="opel" name="city" class="form-control" >Opel</option>
+   <option value="audi" name="city" class="form-control" >Audi</option>
+       </select>
+     </div>
+
+     <div class="form-group">
+     Select area: <select name="area" class="form-control"  size="1" required="">
+      <option value="" selected="selected"name="area" class="form-control"> Select Country </option>
+      <option value="volvo" name="area" class="form-control" >Volvo</option>
+  <option value="saab" name="area" class="form-control" >Saab</option>
+  <option value="opel" name="area" class="form-control" >Opel</option>
+  <option value="audi" name="area" class="form-control" >Audi</option>
+      </select>
+    </div>
+    <div class="form-group">
+        Select pincode: <select name="pin" class="form-control"  size="1" required="">
+         <option value="" selected="selected"name="pin" class="form-control"> Select Country </option>
+         <option value="1234" name="pin" class="form-control" >1234</option>
+     <option value="7890" name="pin" class="form-control" >7890</option>
+     <option value="4589" name="pin" class="form-control" >4589</option>
+     <option value="4879" name="pin" class="form-control" >4879</option>
+         </select>
+       </div>
+    <div class="form-group">
+        Select Catagory: <select name="catagory" class="form-control"  size="1" required="">
+         <option value="" selected="selected"name="catagory" class="form-control"> Select Country </option>
+         <option value="volvo" name="catagory" class="form-control" >Volvo</option>
+     <option value="saab" name="catagory" class="form-control" >Saab</option>
+     <option value="opel" name="catagory" class="form-control" >Opel</option>
+     <option value="audi" name="catagory" class="form-control" >Audi</option>
+         </select>
+       </div>
+       <div class="form-group">
+        Select Subcatagory: <select name="subcatagory" class="form-control"  size="1" required="">
+         <option value="" selected="selected"name="subcatagory" class="form-control"> Select Country </option>
+         <option value="volvo" name="subcatagory" class="form-control" >Volvo</option>
+     <option value="saab" name="subcatagory" class="form-control" >Saab</option>
+     <option value="opel" name="subcatagory" class="form-control" >Opel</option>
+     <option value="audi" name="subcatagory" class="form-control" >Audi</option>
+         </select>
+       </div>
+       <div class="form-group">
+        Select keyword: <select name="keyword" class="form-control"  size="1" required="">
+         <option value="" selected="selected"name="keyword" class="form-control"> Select Country </option>
+         <option value="1234" name="keyword" class="form-control" >1234</option>
+     <option value="3456" name="keyword" class="form-control" >3456</option>
+     <option value="3458" name="keyword" class="form-control" >3458</option>
+     <option value="9801" name="keyword" class="form-control" >9801</option>
+         </select>
+       </div>
+      
+     
+       <!--<div class="form-group">
+        <label>Price</label>
+        <input type="number" name="price" class="form-control" value="1234" required="">
+      </div> -->
+     
+     
+     
+      <button type="submit" class="btn btn-success save-btn">Save</button>
+      
+    </form>
+    <br/>
+    <div class="mid">
+    <table class="table table-bordered data-table" >
+      <thead>
+        <th>Country Name</th>
+        <th>State Name</th>
+        <th >City Name</th>
+        <th >Area Name</th>
+        <th >pincode</th>
+        <th >Catagory</th>
+        <th >Subcatagory</th>
+        <th >Keywords</th>
+        <th >price</th>
+        
+        <th >Action</th>
+      </thead>
+      <tbody>
+      
+      </tbody>
+    </table>
+     
+  </div>
+</div>
+</div>
+     
+  <script type="text/javascript">
+
+
+     
+      $("form").submit(function(e){
+          e.preventDefault();
+          var name = $("select[name='name']").val();
+          var email = $("select[name='email']").val();
+          var city = $("select[name='city']").val();
+          var area = $("select[name='area']").val();
+          var pin = $("select[name='pin']").val();
+          var catagory = $("select[name='catagory']").val();
+          var subcatagory = $("select[name='subcatagory']").val();
+          var keyword = $("select[name='keyword']").val();
+          var price = $("input[name='price']").val();
+       
+       
+       
+          $(".data-table tbody").append("<tr data-name='"+name+"' data-email='"+email+"' data-email='"+city+"' data-email='"+area+"' data-pin='"+pin+"' data-pin='"+catagory+"' data-pin='"+subcatagory+"' data-pin='"+keyword+"' data-pin='"+keyword+"'><td>"+name+"</td><td>"+email+"</td><td>"+city+"</td><td>"+area+"</td> <td>"+pin+"</td><td>"+catagory+"</td><td>"+subcatagory+"</td><td>"+keyword+"</td><td>"+price+"</td><td><button class='btn btn-info btn-xs btn-edit'>click for payment</button><button class='btn btn-danger btn-xs btn-delete'>Delete</button></td></tr>");
+      
+          $("input[name='name']").val('');
+          $("input[name='email']").val('');
+          $("input[name='city']").val('');
+          $("input[name='area']").val('');
+          $("input[name='pin']").val('');
+          $("input[name='catagory']").val('');
+          $("input[name='subcatagory']").val('');
+          $("input[name='keyword']").val('');
+          $("input[name='price']").val('');
+      });
+     
+      $("body").on("click", ".btn-delete", function(){
+          $(this).parents("tr").remove();
+      });
+      
+      $("body").on("click", ".btn-edit", function(){
+        var name = $(this).parents("tr").attr('data-name');
+          var email = $(this).parents("tr").attr('data-email');
+          var city = $(this).parents("tr").attr('data-city');
+          var area = $(this).parents("tr").attr('data-area');
+          var pin = $(this).parents("tr").attr('data-pin');
+          var catagory = $(this).parents("tr").attr('data-catagory');
+          var subcatagory = $(this).parents("tr").attr('data-subcatagory');
+          var keyword = $(this).parents("tr").attr('data-keyword');
+          var price = $(this).parents("tr").attr('data-price');
+          
+
+
+          
+
+          $(this).parents("tr").find("td:eq(8)").html('<input name="edit_pin" value="'+price+'">');
+      
+         
+        
+      
+          $(this).parents("tr").find("td:eq(9)").prepend("<button class='btn btn-info btn-xs btn-update'>unPaid</button><button class='btn btn-warning btn-xs btn-cancel'>Cancel</button>")
+          $(this).hide();
+          
+      });
+     
+      $("body").on("click", ".btn-cancel", function(){
+          var name = $(this).parents("tr").attr('data-name');
+          var email = $(this).parents("tr").attr('data-email');
+          var city = $(this).parents("tr").attr('data-city');
+          var area = $(this).parents("tr").attr('data-area');
+          var pin = $(this).parents("tr").attr('data-pin');
+          var catagory = $(this).parents("tr").attr('data-catagory');
+          var subcatagory = $(this).parents("tr").attr('data-subcatagory');
+          var keyword = $(this).parents("tr").attr('data-keyword');
+          var price = $(this).parents("tr").attr('data-price');
+      
+          $(this).parents("tr").find("td:eq(0)").text(name);
+          $(this).parents("tr").find("td:eq(1)").text(email);
+          $(this).parents("tr").find("td:eq(2)").text(city);
+          $(this).parents("tr").find("td:eq(3)").text(area);
+          $(this).parents("tr").find("td:eq(4)").text(pin);
+          $(this).parents("tr").find("td:eq(5)").text(catagory);
+          $(this).parents("tr").find("td:eq(6)").text(subcatagory);
+          $(this).parents("tr").find("td:eq(7)").text(keyword);
+          $(this).parents("tr").find("td:eq(8)").text(price);
+     
+          $(this).parents("tr").find(".btn-edit").show();
+          $(this).parents("tr").find(".btn-update").remove();
+          $(this).parents("tr").find(".btn-cancel").remove();
+      });
+     
+      $("body").on("click", ".btn-update", function(){
+          var name = $(this).parents("tr").find("input[name='edit_name']").val();
+          var email = $(this).parents("tr").find("input[name='edit_email']").val();
+          var city = $(this).parents("tr").find("input[name='edit_city']").val();
+          var area = $(this).parents("tr").find("input[name='edit_area']").val();
+          var pin = $(this).parents("tr").find("input[name='edit_pin']").val();
+          var catagory = $(this).parents("tr").find("input[name='edit_catagory']").val();
+          var subcatagory = $(this).parents("tr").find("input[name='edit_subcatagory']").val();
+          var keyword = $(this).parents("tr").find("input[name='edit_keyword']").val();
+          var price = $(this).parents("tr").find("input[name='edit_price']").val();
+      
+      
+          $(this).parents("tr").find("td:eq(0)").text(name);
+          $(this).parents("tr").find("td:eq(1)").text(email);
+          $(this).parents("tr").find("td:eq(2)").text(city);
+          $(this).parents("tr").find("td:eq(3)").text(area);
+          $(this).parents("tr").find("td:eq(4)").text(pin);
+          $(this).parents("tr").find("td:eq(5)").text(catagory);
+          $(this).parents("tr").find("td:eq(6)").text(subcatagory);
+          $(this).parents("tr").find("td:eq(7)").text(keyword);
+          $(this).parents("tr").find("td:eq(8)").text(price);
+       
+          $(this).parents("tr").attr('data-name', name);
+          $(this).parents("tr").attr('data-email', email);
+          $(this).parents("tr").attr('data-city', city);
+          $(this).parents("tr").attr('data-area', area);
+          $(this).parents("tr").attr('data-pin', pin);
+          $(this).parents("tr").attr('data-catagory', catagory);
+          $(this).parents("tr").attr('data-subcatagory', subcatagory);
+          $(this).parents("tr").attr('data-keyword', keyword);
+          $(this).parents("tr").attr('data-price', price);
+      
+          $(this).parents("tr").find(".btn-edit").show();
+          $(this).parents("tr").find(".btn-cancel").remove();
+          $(this).parents("tr").find(".btn-update").remove();
+      });
+      
+  </script>
+ 
+</body>
+</html>
